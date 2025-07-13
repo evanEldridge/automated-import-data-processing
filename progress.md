@@ -36,18 +36,19 @@ To build a system that automates the processing and normalization of import/expo
 
 ## 🗓️ Daily Logs
 
-### 🗓️ **[7-12-2025]** – Project Kickoff  
+### 🗓️ **7-12-2025** – Project Kickoff  
 **What I did:**  
 - Installed SQL Server Express + SSMS  
 - Sketched out database schema  
-- Created GitHub repo and project folder structure  
+- Created GitHub repo and project folder structure 
+- Wrote schema SQL scripts and created tables in local 'Imports' database
 
 **Challenges:**  
 - Needed to verify that pyodbc driver works with SQL Server Express
 
-**Next steps:**  
-- Write schema SQL scripts  
-- Build sample CSV file
+**Next steps:**    
+- Build sample CSV files
+- Write a basic script to read a CSV and connect to the database
 
 ---
 
