@@ -22,9 +22,9 @@ To build a system that automates the processing and normalization of import/expo
 | Task | Status |
 |------|--------|
 | Create README.md for GitHub | ✅ Done |
-| Set up local SQL Server instance | 🔄 In Progress |
-| Design normalized database schema | 🔄 In Progress |
-| Write SQL schema script | 🔄 In Progress |
+| Set up local SQL Server instance | ✅ Done |
+| Design normalized database schema | ✅ Done |
+| Write SQL schema script | ✅ Done |
 | Create sample CSV data | 🔄 In Progress |
 | Write Python script to ingest and validate data | ⬜ Not Started |
 | Handle foreign key relationships in script  ⬜ Not Started |
@@ -38,8 +38,7 @@ To build a system that automates the processing and normalization of import/expo
 
 ### 🗓️ **7-12-2025** – Project Kickoff  
 **What I did:**  
-- Installed SQL Server Express + SSMS  
-- Sketched out database schema  
+- Installed SQL Server Express + SSMS   
 - Created GitHub repo and project folder structure 
 - Wrote schema SQL scripts and created tables in local 'Imports' database
 
