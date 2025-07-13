@@ -41,11 +41,11 @@ Inspired by backend tasks at logistics and customs brokerage firms, this system 
 
 ## Database Schema
 
-Countries (CountryID, CountryName)
+  - Countries (CountryID, CountryName)
 
-Ports (PortID, PortCode, PortName, CountryID)
+  - Ports (PortID, PortCode, PortName, CountryID)
 
-Shipments (ShipmentID, ShipmentDate, PortID, ProductCode, Quantity, Weight, ValueUSD, SourceFile, LoadTimestamp)
+  - Shipments (ShipmentID, ShipmentDate, PortID, ProductCode, Quantity, Weight, ValueUSD, SourceFile, LoadTimestamp)
 
 
 Each shipment is linked to a port and country. The database is normalized to avoid duplication and ensure consistency.
@@ -54,15 +54,15 @@ Each shipment is linked to a port and country. The database is normalized to avo
 
 ## Project Structure
 
-automated-imports/
-├── data/ # Input CSV files
-├── scripts/ # Python ETL scripts
-│ └── process_imports.py
-├── schema/ # SQL schema and table definitions
-│ └── create_tables.sql
-├── .env # Database credentials (not tracked in Git)
-├── README.md # Project overview (this file)
-└── progress.md # Dev notes and daily logs
+    automated-imports/
+    ├── data/ # Input CSV files
+    ├── scripts/ # Python ETL scripts
+    │ └── process_imports.py
+    ├── schema/ # SQL schema and table definitions
+    │ └── create_tables.sql
+    ├── .env # Database credentials (not tracked in Git)
+    ├── README.md # Project overview (this file)
+    └── progress.md # Dev notes and daily logs
 
 
 ---
@@ -99,15 +99,15 @@ ShipmentDate,PortCode,PortName,Country,ProductCode,Quantity,Weight,ValueUSD
 
 ## What I Learned
 
-    How to normalize and design relational schemas
+How to normalize and design relational schemas
 
-    Using Python to perform real-world ETL (Extract, Transform, Load)
+Using Python to perform real-world ETL (Extract, Transform, Load)
 
-    Connecting Python to SQL Server using pyodbc
+Connecting Python to SQL Server using pyodbc
 
-    Writing robust, repeatable data ingestion pipelines
+Writing robust, repeatable data ingestion pipelines
 
-    Logging and automation for operational reliability
+Logging and automation for operational reliability
 
 ## Why This Project Matters
 
@@ -121,4 +121,4 @@ Add unit tests for ETL functions
 
 Extend schema to include customer or carrier data
 
-    Migrate to PostgreSQL for platform independence
+Migrate to PostgreSQL for platform independence
